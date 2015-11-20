@@ -1,0 +1,90 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "/",
+  "type": "array",
+  "items": [
+    {
+      "id": "0",
+      "type": "object",
+      "properties": {
+        "component": {
+          "id": "component",
+          "type": "string"
+        },
+        "level": {
+          "id": "level",
+          "type": "string"
+        },
+        "enabled": {
+          "id": "enabled",
+          "type": "string"
+        }
+      },
+      "required": [
+        "component",
+        "level",
+        "enabled"
+      ]
+    },
+    {
+      "id": "1",
+      "type": "object",
+      "properties": {
+        "component": {
+          "id": "component",
+          "type": "string"
+        },
+        "level": {
+          "id": "level",
+          "type": "string"
+        },
+        "enabled": {
+          "id": "enabled",
+          "type": "string"
+        }
+      }
+    },
+    {
+      "id": "2",
+      "type": "object",
+      "properties": {
+        "component": {
+          "id": "component",
+          "type": "string"
+        },
+        "level": {
+          "id": "level",
+          "type": "string"
+        },
+        "enabled": {
+          "id": "enabled",
+          "type": "string"
+        }
+      }
+    },
+    {
+      "id": "3",
+      "type": "object",
+      "properties": {
+        "component": {
+          "id": "component",
+          "type": "string"
+        },
+        "level": {
+          "id": "level",
+          "type": "string"
+        },
+        "enabled": {
+          "id": "enabled",
+          "type": "string"
+        }
+      }
+    }
+  ],
+  "required": [
+    "0",
+    "1",
+    "2",
+    "3"
+  ]
+}
