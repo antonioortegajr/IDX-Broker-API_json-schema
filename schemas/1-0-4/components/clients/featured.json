@@ -1,0 +1,242 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "/",
+  "type": "object",
+  "patternProperties": {
+    "^(/[^/]+)+$": {
+      "type": "object",
+      "properties": {
+        "address": {
+          "id": "address",
+          "type": "string",
+          "minLength": 1
+        },
+        "streetName": {
+          "id": "streetName",
+          "type": "string",
+          "minLength": 1
+        },
+        "streetNumber": {
+          "id": "streetNumber",
+          "type": "string",
+          "minLength": 1,
+          "pattern":"^[0-99999999999999999]+$"
+        },
+        "streetDirection": {
+          "id": "streetDirection",
+          "type": "string"
+        },
+        "unitNumber": {
+          "id": "unitNumber",
+          "type": "string"
+        },
+        "cityName": {
+          "id": "cityName",
+          "type": "string",
+          "minLength": 1
+        },
+        "countyName": {
+          "id": "countyName",
+          "type": "string",
+          "minLength": 1
+        },
+        "state": {
+          "id": "state",
+          "type": "string",
+          "minLength": 1
+        },
+        "zipcode": {
+          "id": "zipcode",
+          "type": "string",
+          "minLength": 1
+        },
+        "listingPrice": {
+          "id": "listingPrice",
+          "type": "string",
+          "minLength": 1
+        },
+        "listingID": {
+          "id": "listingID",
+          "type": "string",
+          "minLength": 1
+        },
+        "remarksConcat": {
+          "id": "remarksConcat",
+          "type": "string"
+        },
+        "rntLse": {
+          "id": "rntLse",
+          "type": "string"
+        },
+        "propStatus": {
+          "id": "propStatus",
+          "type": "string",
+          "minLength": 1
+        },
+        "bedrooms": {
+          "id": "bedrooms",
+          "type": "string",
+          "minLength": 1
+        },
+        "totalBaths": {
+          "id": "totalBaths",
+          "type": "string"
+        },
+        "latitude": {
+          "id": "latitude",
+          "type": "string"
+        },
+        "longitude": {
+          "id": "longitude",
+          "type": "string"
+        },
+        "acres": {
+          "id": "acres",
+          "type": "string"
+        },
+        "sqFt": {
+          "id": "sqFt",
+          "type": "string"
+        },
+        "displayAddress": {
+          "id": "displayAddress",
+          "type": "string",
+          "minLength": 1
+        },
+        "listingAgentID": {
+          "id": "listingAgentID",
+          "type": "string"
+        },
+        "listingOfficeID": {
+          "id": "listingOfficeID",
+          "type": "string"
+        },
+        "sample_mlsPtID": {
+          "id": "sample_mlsPtID",
+          "type": "string",
+          "minLength": 1
+        },
+        "sample_mlsPhotoCount": {
+          "id": "sample_mlsPhotoCount",
+          "type": "string",
+          "pattern":"^[0-99999999999999999]+$"
+        },
+        "parentPtID": {
+          "id": "parentPtID",
+          "type": "string"
+        },
+        "detailsURL": {
+          "id": "detailsURL",
+          "type": "string",
+          "minLength": 1
+        },
+        "idxID": {
+          "id": "idxID",
+          "type": "string",
+          "pattern":"^([a-z|A-Z|0-9])+$",
+          "minLength": 4,
+          "maxLength": 4
+        },
+        "idxPropType": {
+          "id": "idxPropType",
+          "type": "string",
+          "minLength": 1
+        },
+        "idxStatus": {
+          "id": "idxStatus",
+          "type": "string",
+          "minLength": 1
+        },
+        "viewCount": {
+          "id": "viewCount",
+          "type": "string",
+          "pattern":"^[0-99999999999999999]+$",
+          "minLength": 1
+        },
+        "mediaData": {
+          "id": "mediaData",
+          "type": "array",
+          "items": {}
+        },
+        "ohCount": {
+          "id": "ohCount",
+          "type": "string",
+          "pattern":"^[0-99999999999999999]+$",
+          "minLength": 1
+        },
+        "vtCount": {
+          "id": "vtCount",
+          "type": "string",
+          "pattern":"^[0-99999999999999999]+$",
+          "minLength": 1
+        },
+        "featured": {
+          "id": "featured",
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 1,
+          "pattern":"^[y|n|]"
+        },
+        "image": {
+          "id": "image",
+          "type": "object",
+          "properties": {
+            "totalCount": {
+              "id": "totalCount",
+              "type": "string",
+              "pattern":"^[0-99999999999999999]+$"
+            }
+          }
+        },
+        "fullDetailsURL": {
+          "id": "fullDetailsURL",
+          "type": "string",
+          "pattern":"",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "address",
+        "streetName",
+        "streetNumber",
+        "streetDirection",
+        "unitNumber",
+        "cityName",
+        "countyName",
+        "state",
+        "zipcode",
+        "listingPrice",
+        "listingID",
+        "remarksConcat",
+        "rntLse",
+        "propStatus",
+        "bedrooms",
+        "totalBaths",
+        "latitude",
+        "longitude",
+        "acres",
+        "sqFt",
+        "displayAddress",
+        "listingAgentID",
+        "listingOfficeID",
+        "sample_mlsPtID",
+        "sample_mlsPhotoCount",
+        "parentPtID",
+        "detailsURL",
+        "idxID",
+        "idxPropType",
+        "idxStatus",
+        "viewCount",
+        "mediaData",
+        "ohCount",
+        "vtCount",
+        "featured",
+        "image",
+        "fullDetailsURL"
+      ]
+    }
+  },
+  "required": [
+    "a000!%5362657"
+  ]
+}
